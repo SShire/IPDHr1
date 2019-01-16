@@ -8,7 +8,7 @@
 
 team_name = 'Micahs Team' # Only 10 chars displayed.
 strategy_name = 'Ends random'
-strategy_description = 'Colludes until betrayed, then betrays and the rest is random'
+strategy_description = 'olludes until betrayed, then betrays and the rest is random'
 import random 
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -33,6 +33,8 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     elif B > 0:
         return random.randint('c', 'b')
+    else:
+        return 'c'
      
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
