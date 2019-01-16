@@ -9,7 +9,7 @@
 team_name = 'The RNG GODS' # Only 10 chars displayed.
 strategy_name = 'RNG'
 strategy_description = '''this is random number generation from 
-1 - 1000 and finds the remander using 2 and if the said remainder is 
+1 and 2 and finds the remander using 2 and if the said remainder is 
 0 betray and if not collude'''
 import random
         
@@ -22,7 +22,7 @@ def move(my_history, their_history, my_score, their_score):
     '''
     if len(my_history) == 0:
         return 'c'
-    elif random.randint(1,100)%2 == 0:
+    elif random.randint(1,2)%2 == 0:
         return 'b'
     else:
         return 'c'
@@ -51,7 +51,7 @@ if __name__ == '__main__':
               my_score=0,
               their_score=0,
               result='b'):
-         print 'Test passed'
+         print ('Test passed')
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
               their_history='ccc', 
