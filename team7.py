@@ -18,7 +18,7 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b'. 
     '''
     if len(my_history) == 0:
-        total = 0;
+
         for i in their_history:
             if i == 'b':
                 return 'b'
