@@ -1,3 +1,5 @@
+import random
+# -*- coding: utf-8 -*-
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
@@ -6,11 +8,19 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'Team 20' # Only 10 chars displayed.
+strategy_name = "Specific"
+strategy_description = 'Randomize affter -1000 points and until then collude'
     
 def move(my_history, their_history, my_score, their_score):
+    if len(my_history) == 0:
+        return 'c'
+    
+    if my_score > 1000:
+        return random.choice('c', 'b')
+    else:
+        return 'c' 
+        
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
@@ -53,7 +63,7 @@ if __name__ == '__main__':
               my_score=0,
               their_score=0,
               result='b'):
-         print 'Test passed'
+         print ('Test passed')
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
               their_history='ccc', 
