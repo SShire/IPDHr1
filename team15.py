@@ -32,7 +32,7 @@ def move(my_history, their_history, my_score, their_score):
         B = B + 1
         return 'b'
     elif B > 0:
-        return random.randint('c', 'b')
+        return random.coice('c', 'b')
     else:
         return 'c'
      
