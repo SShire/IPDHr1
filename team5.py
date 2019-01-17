@@ -7,8 +7,10 @@
 ####
 
 team_name = 'TeamHarmonie' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'Collude until something happens'
+strategy_description = '''If the person is trustful, I will always collude unless 
+betrayed. If their last play was betray, then I will betray the next time. If 
+their last play was collude, I will collude the next play unless I get betrayed.'''
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
