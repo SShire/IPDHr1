@@ -10,7 +10,7 @@ import random
 
 team_name = 'Team 20' # Only 10 chars displayed.
 strategy_name = "Specific"
-strategy_description = 'Collude or betray depending on what the opponent’s score and history'
+strategy_description = 'Randomize affter -1000 points and until then collude'
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history) == 0:
