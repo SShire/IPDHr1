@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The RNG GODS' # Only 10 chars displayed.
+team_name = 'William BIdingers Team' # Only 10 chars displayed.
 strategy_name = 'RNG'
 strategy_description = '''this is random number generation from 
 1 and 2 and finds the remander using 2 and if the said remainder is 
