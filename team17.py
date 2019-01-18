@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Faiths Team' # Only 10 chars displayed.
+team_name = 'Faith Les Team' # Only 10 chars displayed.
 strategy_name = 'Past Moves'
 strategy_description = 'Based on their history, the program will decide to collude or betray'
     
