@@ -6,8 +6,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Team 2' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
+team_name = 'Austin Ung Teams' # Only 10 chars displayed.
+strategy_name = 'The 50/50'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -15,7 +15,7 @@ def move(my_history, their_history, my_score, their_score):
     my_score, their_score are ints.
     
     Make my move.
-    Returns 'Cooperate' or 'Betrayel'. 
+    Returns 'Cooperate' or 'Betrayal'. 
     '''
 
 
