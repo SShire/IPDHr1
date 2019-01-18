@@ -7,8 +7,8 @@
 ####
 
 team_name = 'Faiths Team' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'Past Moves'
+strategy_description = 'Based on their history, the program will decide to collude or betray'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -34,7 +34,7 @@ def move(my_history, their_history, my_score, their_score):
         return 'c'
     else: 
         return'b'
-    t
+    
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
