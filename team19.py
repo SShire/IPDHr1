@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = "Spencer's Team" # Only 10 chars displayed.
+team_name = "Spencer Opitzs Team" # Only 10 chars displayed.
 strategy_name = 'Collude Or Betray Based On Score'
 strategy_description = 'If its score is greater than or equal to the other it colludes; if not it betrays.'
     
@@ -17,11 +17,12 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-    if my_score >= their_score:
+    if my_score >= their_score - 600:
         return 'c'
-    if their_score > my_score:
+    if their_score - 600 > my_score:
         return 'b'
-    
+    else:
+        return 'error'
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
