@@ -8,6 +8,7 @@
 
 team_name = '12' # Only 10 chars displayed.
 strategy_name = 'AG jacka'
+strategy_description = 'If the other player has betrayed within last 10 rounds, betray them,else collude'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
