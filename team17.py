@@ -1,3 +1,9 @@
+from importlib import reload
+
+import random
+
+import os.path
+
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
