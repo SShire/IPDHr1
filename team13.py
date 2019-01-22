@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Kowsar Gure team 13!' # Only 10 chars displayed.
-strategy_name = 'kowsG!'
+strategy_name = 'if they both c return c otherwest renurn b'
 strategy_description = 'if my history-1 is and their history-1 is c then return c otherwest return b'
     
 def move(my_history, their_history, my_score, their_score):
