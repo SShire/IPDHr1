@@ -13,14 +13,15 @@ strategy_description = 'It will continuously collide until it was betrayed twice
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history)==0:
-        total = 0
+        return "c"
+    total = 0
     for i in their_history:
         if i == "b":
-            total += 1
+           total += 1
         if total >= 2:
             return "b"
     else:
-            return 'c'
+            return "c"
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
