@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Austin Ung Teams' # Only 10 chars displayed.
-strategy_name = 'The 50/50'
+strategy_name = 'The 50/50 rewind'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -18,9 +18,9 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'Cooperate' or 'Betrayal'. 
     '''
     
-    if len(my_history) < 100:#collude the first half 
+    if len(my_history) > 100:#collude the first half 
         return 'c'
-    if len(my_history) > 100: #betray the second half 
+    if len(my_history) < 100: #betray the second half 
         return 'b'   
     
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
