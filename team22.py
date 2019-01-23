@@ -9,7 +9,7 @@
 team_name = 'William BIdingers Team' # Only 10 chars displayed.
 strategy_name = 'RNG'
 strategy_description = '''this is random number generation from 
-1 and 2 and finds the remander using 2 and if the said remainder is 
+1,2 and 3 and finds the remander using 2 and if the said remainder is 
 0 betray and if not collude'''
 import random
         
@@ -22,10 +22,10 @@ def move(my_history, their_history, my_score, their_score):
     '''
     if len(my_history) == 0:
         return 'c'
-    elif random.randint(1,2)%2 == 0:
-        return 'b'
-    else:
+    elif random.randint(1,2,3)%2 == 0:
         return 'c'
+    else:
+        return 'b'
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
