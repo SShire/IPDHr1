@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Evan Kruse.s team' # Only 10 chars displayed.
-strategy_name = 'Triple collude and betray'
+strategy_name = 'collude until betrayed'
 strategy_description = 'this program colludes three times and then betrays three times in a pattern '
     
 def move(my_history, their_history, my_score, their_score):
@@ -26,18 +26,11 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    if len(my_history)%6==0:
-        return 'c'
-    if len(my_history)%6==1:
-        return 'c'
-    if len(my_history)%6==2:
-        return 'c'
-    if len(my_history)%6==3:
-        return 'b'
-    if len(my_history)%6==4:
-        return 'b'
-    if len(my_history)%6==5:
-        return 'b'
+    if 'b' in their_history:
+       return 'b'
+    else: 
+       return 'c' 
+       
 
 
     
