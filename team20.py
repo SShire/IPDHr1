@@ -10,14 +10,14 @@ import random
 
 team_name = "Jit Bhakta's Team" # Only 10 chars displayed.
 strategy_name = "Specific"
-strategy_description = 'Randomize affter -1000 points and until then collude'
+strategy_description = 'Randomize affter -2000 points and until then collude'
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history) == 0:
         return 'c'
     
-    if my_score > 1000:
-        return random.choice('c', 'b')
+    if my_score < -2000:
+        return random.choice(['c', 'b'])
     else:
         return 'c' 
         
