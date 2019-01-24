@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Zach Franks Team' # Only 10 chars displayed.
-strategy_name = 'Collude until betray, randomly betrays on intervals'
+strategy_name = 'Collude until betrays'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -19,7 +19,7 @@ def move(my_history, their_history, my_score, their_score):
     '''
     if len(my_history) == 0:
         return 'c'
-    elif my_history[-1]=='c' and their_history[-1]=='b' or len(my_history) == (99,109,119,129,139,149,159,169,179,189,199):
+    elif 'b' in their_history:
         return 'b'
     else:
         return 'c'
